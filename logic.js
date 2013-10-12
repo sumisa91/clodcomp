@@ -42,9 +42,9 @@ function loadChart(id){
                           data.addColumn('string', 'Sentiment');
                           data.addColumn('number', 'Count');
                           data.addRows([
-                            ['Positive', items[0]],
-                            ['Negative', items[1]],
-                            ['Neutral', items[2]]
+                            ['Positive', parseInt(items[0])],
+                            ['Negative', parseInt(items[1])],
+                            ['Neutral', parseInt(items[2])]
                           ]);
 
                           var options = {title: 'Sentiment by Percent'};
