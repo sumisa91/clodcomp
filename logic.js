@@ -13,6 +13,7 @@ function getTweets(id){
                 
 }
 
+//Get json data from Chart.php and store the values of positive, negative and neutral in an array --items
 function getChart(id){
 		$.getJSON("Chart.php?start="+id,
 		function(data){
